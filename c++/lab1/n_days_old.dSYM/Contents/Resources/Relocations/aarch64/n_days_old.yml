@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ypragnesh/Desktop/c++/lab1/n_days_old'
+relocations:     []
+...
