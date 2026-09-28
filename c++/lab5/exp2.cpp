@@ -1,31 +1,30 @@
 #include <iostream>
 using namespace std;
 
-class Book {
+class Rectangle {
 public:
-    string title;
-    float price;
+    float length;
+    float breadth;
 
-    void displayBook() {
-        cout << "Title: " << title << endl;
-        cout << "Price: " << price << endl;
+    void calculateArea() {
+        cout << "Area: " << length * breadth << endl;
     }
 };
 
 int main() {
-    Book novel, textbook;
+    Rectangle classroom, playground;
 
-    novel.title = "The Alchemist";
-    novel.price = 350;
+    classroom.length = 20;
+    classroom.breadth = 10;
 
-    textbook.title = "C++ Programming";
-    textbook.price = 500;
+    playground.length = 50;
+    playground.breadth = 30;
 
-    cout << "Novel Details:" << endl;
-    novel.displayBook();
+    cout << "Classroom Area:" << endl;
+    classroom.calculateArea();
 
-    cout << "\nTextbook Details:" << endl;
-    textbook.displayBook();
+    cout << "\nPlayground Area:" << endl;
+    playground.calculateArea();
 
     return 0;
 }
