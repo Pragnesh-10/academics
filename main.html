@@ -1,39 +1,28 @@
 <html>
     <body>
-        <button a href="https://youtube.com">DAA</button>
-        <table border="1">
-            <tr>
-                <th>Sr No</th>
-                <th>Topic</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Introduction to DA</td>
-                <td><a href="https://www.geeksforgeeks.org/introduction-to-algorithms/">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Divide and Conquer</td>
-                <td><a href="https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Greedy Method</td>
-                <td><a href="https://www.geeksforgeeks.org/greedy-algorithms/">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Dynamic Programming</td>
-                <td><a href="https://www.geeksforgeeks.org/dynamic-programming/">Click Here</a></td>
-            </tr>
-        </table>
+        
+        <input type="text" placeholder="Enter your name", width="200px", height="30px"><br>
+        <input type="email" placeholder="Enter your email", width="200px", height="30px"><br>
+        <input type = "password" placeholder="Enter your password", width="200px", height="30px"><br>
+        <input type="password" placeholder="Confirm your password", width="200px", height="30px"><br>
+        <input type="radiobutton" name="gender" value="male">Male<br>
+        <input type="radiobutton" name="gender" value="female">Female<br>
+        <input type="checkbox"> I agree to the terms and conditions<br>
+
+        <button>Submit</button>
         <script>
-        const button = document.querySelector('button');
-        button.addEventListener('click', () => {
-            window.location.href = 'https://youtube.com';
-        });
-        alert('Welcome');
+        
+        const input = document.querySelector('input');
+        if (input.value === '') {
+            alert('Please fill in all fields');
+        } else {
+            alert('Form submitted successfully');
+        }
+        const password = document.querySelector('input[type="password"]');
+        const confirmPassword = document.querySelector('input[placeholder="Confirm your password"]');
+        if (password.value !== confirmPassword.value) {
+            alert('Passwords do not match');
+        }
         </script>
     </body>
 </html>
